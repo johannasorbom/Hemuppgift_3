@@ -8,6 +8,7 @@
 \author{Johanna Sörbom}
 
 \newcommand{\case}[1]{\subsection*{#1}}
+\newcommand{\ac}{AC-system}
 \newcommand{\cmp}[2]{\ensuremath{#1+#2i}}
 \begin{document}
 \maketitle
@@ -15,6 +16,7 @@
 \section{Metod}
 \section{Bakgrund}
 \section{Resultat och beräkningar}
+\subsection{Impedance of power lines}
 The impedence of the power line is given by the equation 
 
 \begin{equation}\label{eq_impd}
@@ -29,6 +31,18 @@ Z&=&  L \cdot Z_{km} \\
 &=&10 (\cmp{0.2}{0.4}) \\
 &=& \cmp{2}{4} \label{res}
 \end{eqnarray} by substituing into equation \ref{eq_impd}. Interpreting the real part of the result obtained in equation \ref{res} as resistance and the complex part as reactance, we have $R=2$ and $X=4$ respectively.
+
+\subsection{Calculation of reactive power}
+Complex power is defined as, \begin{equation}
+S = \sqrt{P^2 - Q^2}
+\end{equation}
+where $P$ is the active power and $Q$ is the reactive power. For balanced load in an \ac we have, 
+\begin{equation}
+P = S \cdot \cos\theta
+\end{equation}
+where $\theta$ is the phase offset between voltage and current. 
+\case{Solsidan}
+For the 
 
 
 
