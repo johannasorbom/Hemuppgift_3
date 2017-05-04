@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs}
@@ -10,16 +10,19 @@
 \date{\today}
 \author{Johanna Sörbom}
 
-\newcommand{\case}[1]{\subsection*{#1}}
+\newcommand{\case}[1]{\subsubsection*{#1}}
 \newcommand{\ac}{AC-system}
 \newcommand{\cmp}[2]{\ensuremath{#1+#2i}}
+\newcommand{\mypart}[2]{\section*{Part #1 - \textit{#2}}}
+\newcommand{\mysubpart}[1]{\subsection*{#1}}
 \begin{document}
 \maketitle
-\section{Inledning}
-\section{Method}
-\section{Bakgrund}
-\section{Resultat och beräkningar}
-\subsection{Impedance of power lines}
+\chapter*{Introduction}
+\chapter*{Method}
+\chapter*{Background}
+\chapter*{Result and calculations}
+\mypart{A}{How}
+\mysubpart{Impedance of power lines}
 The impedence of the power line is given by the equation 
 
 \begin{equation}\label{eq_impd}
@@ -71,7 +74,7 @@ Z&=&  L \cdot Z_{km} \\
 &=& \cmp{3}{6} \label{res5}
 \end{eqnarray} by substituing into equation \ref{eq_impd}. Interpreting the real part of the result obtained in equation \ref{res5} as resistance and the complex part as reactance, we have $R=3\Omega$ and $X=6\Omega$ respectively.
 
-\subsection{Reactive power}
+\mysubpart{Reactive power}
 Complex power is defined as, \begin{equation}
 S = \sqrt{P^2 - Q^2} \label{s}
 \end{equation}
@@ -110,7 +113,7 @@ Q&=&  \sqrt{S^2 - P^2}\\
 &=& 2.43 MW \label{res}
 \end{eqnarray} by substituting into equation \ref{s}.
 
-\subsection{Voltage in power lines}
+\mysubpart{Voltage in power lines}
 By using Excell to calculate the voltage in the power lines using data from above we get two cases.
 
 \case{Not using wind power or solar power}
