@@ -21,7 +21,9 @@
 \chapter*{Method}
 \chapter*{Background}
 \chapter*{Result and calculations}
-\mypart{A}{How}
+\mypart{A}{What is the maximum possible income per year by build solar cells in the three areas of Brytpunkten, Framtiden and Solsidan?}
+To find the maximum possible income per year by build solar cells you need to calculate the maximum square meters of solar cells possible to build in each of the three areas, Brytpunkten, Framtiden och Solsidan. While doing this the voltage have to stay between 63-77 kW and you also need to have the same amount of solar cells in each area. To help with these calculations an excell file was given in the assignment. The first step to solve this is to calculate the impendance of the power lines and add the results to the excell file.  After that the reactive power was calculated and added to the same excell file. By running the excell file with and without wind power active and without solar cells results on the voltage at Brytpunkten, Framtiden och Solsidan where attained. Se part \ref{Voltage1} for results.  
+
 \mysubpart{Impedance of power lines}
 The impedence of the power line is given by the equation 
 
@@ -113,7 +115,7 @@ Q&=&  \sqrt{S^2 - P^2}\\
 &=& 2.43 MW \label{res}
 \end{eqnarray} by substituting into equation \ref{s}.
 
-\mysubpart{Voltage in power lines}
+\mysubpart{Voltage in power lines}\label{Voltage1}
 By using Excell to calculate the voltage in the power lines using data from above we get two cases.
 
 \case{Not using wind power or solar power}
@@ -160,8 +162,72 @@ As seen in figure \ref{fig_med_vindeby}
 \caption{Voltage when not using wind power.} 
 \end{figure}
 
+\mysubpart{Total area of solar cells possible }
+To find the maximum square meters of solar cells possible at each area without making the voltage in the power lines at each area to high or to low, we lower the active effect until the voltage is either over 77 or under 63. In this case the solar panels supply effect to the buildings and they need less from the rest of the power grid. By doing this in even steps a result was attained when the voltage at Solsidan became to low. This occurred after lowering the power with 65MW. That means that the total capacity for solar energy in the three areas is, 
+\begin{equation}
+P = 3 \cdot 65 = 195 MW
+\end{equation}
 
+This is an area of,
+\begin{eqnarray}
+A&=&  P/\eta \cdot E_{sol}/m^2 \cdot 10^{-3} \\
+&=& 3 \cdot 65 \cdot 1  \cdot 10^{-3} \\
+&=& 195 m^2}
+\end
 
+\begin{figure}[h]
+\label{Voltage_change}
+\includegraphics[width=\linewidth]{Voltage_change.png}
+\caption{Voltage change when installing solar cells.} 
+\end{figure}
+
+ 
+\mysubpart{ Maximum possible income}
+The price per $ m^2 $ for solar cells is $ 1 kr/kWh $ and every $ 1 kW $ solar cells produce $ 1000 kWh/year $. This gives a maximum yearly income of, 
+\begin{equation}
+I = 195 \cdot 10^6 \cdot 1 = 195 000 000 kr
+\end{equation}
+
+\newpage 
+\mypart{B}{Is building the solar cells from question A economically viable?}
+
+Income for installing solar cells come from a number of factors. These are electricity sales, electricity certification,  GOO-Guaranties of Origin and tax-reduction.
+
+\mysubpart{Electricity sales}
+Nordpool controls the prices of the electricity being sold. In this report the price of electricity is assumed to be the average year 2010 for the months of August and October. 
+
+\begin{equation}
+August = 0.417 kr/kWh
+\end{equation}
+
+\begin{equation}
+October = 0.495 kr/kWh
+\end{equation}
+
+\begin{equation}
+Price electricity = ( 0.417  + 0.495)/2 = 0.456 kr/kWh
+\end{equation}
+
+\mysubpart{Electricity certification}
+Electricity certification is a support system to encourage increased production of renewable electricity. According to Nasdaq certificates where sold to Electricity Nordic Future for $ 0.26 kr/kWh$.  KÄLLA
+
+\mysubpart{GOO-Guaranties of Origin}
+At the EEX Goos can be purchased for $ 0.00008 kr/kWh $. KÄLLA
+
+\mysubpart{Tax-reduction.}
+As from the 1 of January 2015 excess electricity can be pumped into the national powergrid for a taxreduction. The tax reduction is $ 0.6 kr/kWh $ with a maximum of the amount of hour previously purchased from the powergrid or $ 30 000 kWh $. In this report every kWh of solar energy gives an income of $ 0.6 kr $. 
+
+\mysubpart{Profit}
+Adding all of these incomes gives a total income of $ 1.316 kr/kWh $. This means a profit of, 
+\begin{eqnarray}
+Profit&=& Income - cost \\
+&=& 1.316 - 1 \\
+&=& 0.316 kr/kWh}
+\end
+
+Building $ 195 m^2 $ of solar cells is profitable. 
+
+\mypart{C}{Is it viable to build a parallel power line to be able to increase the number of solar cells?}
 
 
 \end{document}
