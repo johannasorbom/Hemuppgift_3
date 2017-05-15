@@ -171,10 +171,10 @@ P = 3 \cdot 65 = 195 MW
 This is an area of,
 \begin{eqnarray}
 A&=&  P/\eta \cdot E_{sol}/m^2 \cdot 10^{-3} \\
-&=& 3 \cdot 65 \cdot 1  \cdot 10^{-3} \\
-&=& 195 m^2}
+&=& 195 \cdot 10^6 / 0.18 \cdot 1 \cdot 10^{3} \\
+&=&  m^2}
 \end
-
+FEL
 \begin{figure}[h]
 \label{Voltage_change}
 \includegraphics[width=\linewidth]{Voltage_change.png}
@@ -183,11 +183,11 @@ A&=&  P/\eta \cdot E_{sol}/m^2 \cdot 10^{-3} \\
 
  
 \mysubpart{ Maximum possible income}
-The price per $ m^2 $ for solar cells is $ 1 kr/kWh $ and every $ 1 kW $ solar cells produce $ 1000 kWh/year $. This gives a maximum yearly income of, 
+The income for solar cells is $ 1.316 kr/kWh $ every kW solar cells produce 1000 kWh/year and we can build $  $ of solar cells. This gives a maximum yearly income of, 
 \begin{equation}
 I = 195 \cdot 10^6 \cdot 1 = 195 000 000 kr
 \end{equation}
-
+FEL
 \newpage 
 \mypart{B}{Is building the solar cells from question A economically viable?}
 
@@ -218,7 +218,7 @@ At the EEX Goos can be purchased for $ 0.00008 kr/kWh $. KÄLLA
 As from the 1 of January 2015 excess electricity can be pumped into the national powergrid for a taxreduction. The tax reduction is $ 0.6 kr/kWh $ with a maximum of the amount of hour previously purchased from the powergrid or $ 30 000 kWh $. In this report every kWh of solar energy gives an income of $ 0.6 kr $. 
 
 \mysubpart{Profit}
-Adding all of these incomes gives a total income of $ 1.316 kr/kWh $. This means a profit of, 
+Adding all of these incomes gives a total income of $ 1.316 kr/kWh $. Havin solar cells cost 1 kr/kWh. This means a profit of, 
 \begin{eqnarray}
 Profit&=& Income - cost \\
 &=& 1.316 - 1 \\
@@ -227,7 +227,42 @@ Profit&=& Income - cost \\
 
 Building $ 195 m^2 $ of solar cells is profitable. 
 
-\mypart{C}{Is it viable to build a parallel power line to be able to increase the number of solar cells?}
+\mypart{C}{Is it economically viable to build a parallel power line to strengthen the power lines and be able to increase the number of solar cells?}
+
+Building a parallel power line to strengthen the power lines means that they can take a higher voltage and therefore transport more electricity. This makes it possible to install more solar cells at the different areas. A way of strengthening the power lines is to lower the impediance by make them thicker and making the isolation better.
+
+The investment cost to build an additional power line with voltage $ 70 kV $ is $ 1 800 000 kr/km $. In part A we got the result that the power line at Solsidan is the limiting power line and therefore the one that might profit from an additional power line. To decide weather to add an additional  additional power line between Brytpunkten and Solsidan or between Framtiden and Solsidan the impedance is divided by two and a new voltage attained. We wnat to build the power line at the place where we get the highest voltage.  
+
+\mysubpart{Brytpunkten to Solsidan }
+The current power line between Brytpunkten and Solsidan has the impedance,
+\begin{equation}
+Z = \cmp{0.2}{0.4} 
+\end{equation}
+
+Strengthening this power line means cutting the impedance in half, \begin{equation}
+Z = \cmp{0.1}{0.2} 
+\end{equation}
+
+The length of this power line is $ 21.21 km $ which means it the cost of building the additional power line here is, 
+\begin{equation}
+Cost = 21.21 \cdot 1800000 = 38178000 kr 
+\end{equation}
+
+Running the excell file with the new values gives a new voltage and y finding where the voltage is no longer in the range 63-77 a new maximum area of solar cells can be calculated. \\
+
+CALCULATIONS\\
+
+The cost of these solar cells are $ 1 kr/kWh $ and the income is 
+
+
+
+
+
+
+\mysubpart{Framtiden to Solsidan }
+
+
+
 
 
 \end{document}
