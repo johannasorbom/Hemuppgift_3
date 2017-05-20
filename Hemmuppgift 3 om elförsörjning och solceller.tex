@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs}
-\title{Homework 3\\ Electricity supply and solarcells}
+\title{Homework 3\\ Electricity supply and solar cells}
 \date{\today}
 \author{Johanna Sörbom}
 
@@ -18,10 +18,18 @@
 \begin{document}
 \maketitle
 \chapter*{Introduction}
-\chapter*{Method}
-\chapter*{Background}
+Someone wants to install solarcells on the roof of buildings in three areas in Sweden. In this report we are looking into how much sollarcells it is possible to install and what the profit would be if you did this. Would it be worth doing from an economic perspective? And what would happen if a dark cloud passed over the areas?
+
+\section*{Method}
+Through values given in the homework and excell answers to questions in this report has been answered. Information  has also been collected from relevant websites. 
+
+\section*{Background}
+The level of greenhouse gases in the atmosphere is today the highest that it has ever been. Since 1880 the averrage temperature has risen by $ 0.85 degees C $,. The greenhouse gasses emitted by humans are a big reason for this climate change and it is more and more important to change to renewable energy sources such as solar energy. (United Nations. 2017)
+
+Solar energy is a renewable energysource that can be transformed into electricity. The energy that comes from the sun to earth is approximatly $ 15000 $ times as much as the total energy use in the world today. If only a bit of this could be harvested it could solve a lot of the worlds energy problems. (Vattenfall. 2016) That is why this report looks into the use of solar energy in three areas in Sweden to see if it would be profitable to use as a source for energy. 
+
 \chapter*{Result and calculations}
-\mypart{A}{What is the maximum possible income per year by build solar cells in the three areas of Brytpunkten, Framtiden and Solsidan?}
+\mypart{A}{What is the maximum possible income per year of building solar cells in the three areas of Brytpunkten, Framtiden and Solsidan?}
 To find the maximum possible income per year by build solar cells you need to calculate the maximum square meters of solar cells possible to build in each of the three areas, Brytpunkten, Framtiden och Solsidan. While doing this the voltage have to stay between 63-77 kW and you also need to have the same amount of solar cells in each area. To help with these calculations an excell file was given in the assignment. The first step to solve this is to calculate the impendance of the power lines and add the results to the excell file.  After that the reactive power was calculated and added to the same excell file. By running the excell file with and without wind power active and without solar cells results on the voltage at Brytpunkten, Framtiden och Solsidan where attained. Se part \ref{Voltage1} for results.  
 
 \mysubpart{Impedance of power lines}
@@ -172,20 +180,20 @@ This is an area of,
 \begin{eqnarray}
 A&=&  P/\eta \cdot E_{sol}/m^2 \cdot 10^{-3} \\
 &=& 288 \cdot 10^6 / 0.18 \cdot 1 \cdot 10^{-3} \\
-&=&  X m^2}
-\end
+&=&  1600000 m^2}
+\end{eqnarray}
 
 \begin{figure}[h]
-\label{Voltage_change}
-\includegraphics[width=\linewidth]{Voltage_change.png}
-\caption{Voltage change when installing solar cells.} 
+\label{voltagechange}
+\includegraphics[width=\linewidth]{voltagechange.png}
+\caption{Voltage change when installing solar cells where green is Brytpunkten, blue is Framsidan and Red is Solsidan.} 
 \end{figure}
 
  
 \mysubpart{ Maximum possible income}
 The income for solar cells is $ 1.316 kr/kWh $ every kW solar cells produce 1000 kWh/year and we can build $  $ of solar cells. This gives a maximum yearly income of, 
 \begin{equation}
-I = 288 \cdot 10^6 \cdot 1.316 = X kr
+I = 288 \cdot 10^6 \cdot 1.316 = 379008000 kr
 \end{equation}
 
 \newpage 
@@ -209,10 +217,11 @@ Price electricity = ( 0.417  + 0.495)/2 = 0.456 kr/kWh
 \end{equation}
 
 \mysubpart{Electricity certification}
-Electricity certification is a support system to encourage increased production of renewable electricity. According to Nasdaq certificates where sold to Electricity Nordic Future for $ 0.26 kr/kWh$.  KÄLLA
+Electricity certification is a support system to encourage increased production of renewable electricity. According to Nasdaq certificates where sold to Electricity Nordic Future for $ 0.26 kr/kWh$. (Nasdaq. 2017)
 
 \mysubpart{GOO-Guaranties of Origin}
-At the EEX Goos can be purchased for $ 0.00008 kr/kWh $. KÄLLA
+At the EEX Goos can be purchased for $ 0.00008 kr/kWh $. (European Energy Exchange. 2017)
+
 
 \mysubpart{Tax-reduction.}
 As from the 1 of January 2015 excess electricity can be pumped into the national powergrid for a taxreduction. The tax reduction is $ 0.6 kr/kWh $ with a maximum of the amount of hour previously purchased from the powergrid or $ 30 000 kWh $. In this report every kWh of solar energy gives an income of $ 0.6 kr $. 
@@ -224,14 +233,13 @@ Profit&=& Income - cost \\
 &=& 1.316 - 1 \\
 &=& 0.316 kr/kWh}
 \end
-
-Building $ 195 m^2 $ of solar cells is profitable. 
+Building $ 288 m^2 $ of solar cells is profitable. 
 
 \mypart{C}{Is it economically viable to build a parallel power line to strengthen the power lines and be able to increase the number of solar cells?}
 
 Building a parallel power line to strengthen the power lines means that they can take a higher voltage and therefore transport more electricity. This makes it possible to install more solar cells at the different areas. A way of strengthening the power lines is to lower the impediance by make them thicker and making the isolation better.
 
-The investment cost to build an additional power line with voltage $ 70 kV $ is $ 1 800 000 kr/km $. In part A we got the result that the power line at Solsidan is the limiting power line and therefore the one that might profit from an additional power line. To decide weather to add an additional  additional power line between Brytpunkten and Solsidan or between Framtiden and Solsidan the impedance is divided by two and a new voltage attained. We wnat to build the power line at the place where we get the highest voltage.  
+The investment cost to build an additional power line with voltage $ 70 kV $ is $ 1 800 000 kr/km $. In part A we got the result that the power line at Solsidan is the limiting power line and therefore the one that might profit from an additional power line. To decide weather to add an additional  additional power line between Brytpunkten and Solsidan or between Framtiden and Solsidan the impedance is divided by two and a new voltage attained. We want to build the power line at the place where we get the highest voltage. This turns out to be between Brytpunkten and Solsidan.
 
 \mysubpart{Brytpunkten to Solsidan }
 The current power line between Brytpunkten and Solsidan has the impedance,
@@ -248,10 +256,10 @@ The length of this power line is $ 21.21 km $ which means it the cost of buildin
 Cost = 21.21 \cdot 1800000 = 38178000 kr 
 \end{equation}
 
-Running the excell file with the new values gives a new voltage and y finding where the voltage is no longer in the range 63-77 a new maximum capacity for of solar cells can be calculated. \\
+Running the excell file with the new values and finding where the voltage is no longer in the range 63-77 a new maximum capacity for of solar cells can be calculated. This happens at Framtiden and we can now install $ 155 MW $ solar cells in each area.\\
 
 \begin{equation}
-P = 3 \cdot X = X MW
+P = 3 \cdot 155 = 465 MW
 \end{equation}
 
 The profit of having solar cells is as seen in part B,
@@ -259,25 +267,87 @@ The profit of having solar cells is as seen in part B,
 Profit&=& Income - cost \\
 &=& 1.316 - 1 \\
 &=& 0.316 kr/kWh}
-\end
+\end{eqnarray}
 
 This gives a yearly profit of, 
 \begin{equation}
-Profit year =  Profit * P = X kr 
+Profit year =  0.316 \cdot 10^{-3} \cdot 465 \cdot 10^6  = 146940 kr 
 \end{equation}
 
 Taking in consideration the cost to build an additional power line,
 \begin{equation}
-Profit new power line = Profit year - cost = X kr
+Profit new power line = 146940 - 38178000 = -38031060 kr
 \end{equation}
 
+This means it is not worth building a new power line between Solsidan and Brytpunkten. 
 
 
 
 \mysubpart{Framtiden to Solsidan }
 
+\mypart{D}{How does then frequency change with time when a black cloud passes over the three areas?}
+
+The cloud comes from the south with a velocity of $ 7 m/s $. The cloud will pass over Solsidan first and then Framtiden and Brytpunkten $ 15 km $ later. The length of the cloud is $ 20 km $. With this information the time it takes for the cloud to completely pass over the three areas can be calculated as,
+
+\begin{equation}
+t = (15000 + 20000) * 7 = 245000 s
+\end{equation}
+
+When the first and last $ 5 km $ of the cloud passes over the areas it will not block the sun completely. It will gradually block the sum more and more until it with the $ 10 km $ in the middle of the cloud only lets $ 1kW/m^3 $ of sun through. See figure \ref{cloud}. 
+
+\begin{figure}[h] 
+\label{cloud}
+\includegraphics[scale=1]{cloud.png} 
+\end{figure}\\
+
+When this happens the production of solar power reduces by $ 90% $.
+
+\begin{table}[H] 
+\begin{tabular}{ll}
+\toprule
+Location & Power (MW) \\
+\midrule
+Brytpunkten & $ 96*0.1 = 9.6 MW$\\
+Framtiden  &  $ 96*0.1 =  9.6 MW$\\
+Solsidan & $ 96*0.1 =  9.6 MW$\\
+\bottomrule
+\end{tabular} 
+\end{table} 
+
+\begin{figure}[h] 
+\label{powerchange}
+\includegraphics[scale=0.5]{powerchange.png} 
+\caption{Change of power with time in Solsidan (Blue), Framtiden and Brytpunkten (Red).}
+\end{figure}\\
 
 
+To calculate how much the frequency decreases with time when the cloud passes following formula is used,  
+\begin{equation}
+\Delta f = \Delta P /R
+\end{equation}
+Where $ \Delta f $ is the change in frequency, $ \Delta P =  86.4 MW $ is the change in power and $ R = 4300 MW/Hz $ is the gain. This results in the following graph, 
 
+\begin{figure}[h] 
+\label{frequency}
+\includegraphics[scale=0.5]{frequency.png} 
+\caption{Change of frequency with time.}
+\end{figure}\\
 
+The frequency starts at $ 50 Hz $ and goes down to $ 49.472 Hz $ when it is located over all three of the areas. 
+
+\mypart{E}{How do we get more people interested in installing solar cells on their houses?}
+One part of getting people interested in getting solar cells for their houses is knowledge. To get people interested in this they need to know that it is an option. It is also important to know why you should care about environmental questions and what solar cells got to do with this. How to get the solar cells and install them is important to know so that people don't think that it is harder that it actually is. A lot of the time just getting started with getting the necessary information is the hardest part. Once that part is covered the gain of having solar cells is important. One thing mentioned earlier in the report is subsidizing means such as tax reduction to get people to invest in solar cells is important. But the most important part is probably knowledge about solar cells. One way is to install more solar cells in public areas. When people notice the solar cells it can and interest in them. Solar cells can also inspire people to engage in other sustainable development questions. One example of this is the project "Ecostaden Augustenborg" in Malmö which inspired local schools to engage in  sustainable development questions and raised awareness and interest among children. (Naturvårdsverket, 2005) 
 \end{document}
+
+\chapter*{Introduction}
+Naturvårdsverket, 2005. Att länka miljöeffekter och sociala effekter – en utvärdering av LIP-finansierade bostadsförnyelseprojekt. Jenny Stenberg och Liane Thuvander
+https://www.naturvardsvproject erket.se/Documents/publikationer/620-5511-9.pdf\\
+
+Nasdaq. 2017. MARKET PRICES. Nasdaq.
+http://www.nasdaqomx.com/commodities/market-prices\\
+
+European Energy Exchange. 2017. EU guideline 2009/28/EC on trading of Guarantees of Origin. European Energy Exchange.
+https://www.eex.com/en/goo
+
+
+
